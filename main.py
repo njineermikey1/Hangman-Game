@@ -20,6 +20,8 @@ guess = guess.lower()
 print(guess)
 word_length = len(chosen_word)
 print(word_length)
+#underscore_word = "_".join(str(e)for e in chosen_word
+#print(underscore_word)
 y = 0
 for x in chosen_word:
   if x == guess:
