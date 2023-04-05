@@ -20,16 +20,25 @@ guess = guess.lower()
 print(guess)
 word_length = len(chosen_word)
 print(word_length)
-#underscore_word = "_".join(str(e)for e in chosen_word
-#print(underscore_word)
+underscore_char = "_"
+underscore_word = underscore_char * len(chosen_word)
+print(chosen_word)
+print(underscore_word)
+#my_string = "Hello World"
+#index_to_replace = 4 = x
+#new_char = "a" = underscore_char
+#new_string = my_string[:index_to_replace] + new_char + my_string[index_to_replace+1:] - underscor_word = underscore_word[x] + guess + underscore_word[x+1]
+#print(new_string)
 y = 0
 for x in chosen_word:
   if x == guess:
     print("Match " + guess + " = " + x)
-    #y += 1
+    underscore_word = underscore_word[:y] + guess + underscore_word[y+1:]
+    print(underscore_word)
+    y += 1
   else:
     print("No Match " + guess + " != " + x)
-    #y += 1
+    y += 1
 for letter in chosen_word:
     if letter == guess:
         print("Right")
