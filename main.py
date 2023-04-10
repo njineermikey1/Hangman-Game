@@ -1,6 +1,6 @@
 #Step 1 
 
-word_list = ["aardvark", "baboon", "camel", "pistachio","mountain","radio","tumble","forgiveness","newspaper","concede","packet"]
+word_list = ["aardvark", "baboon", "camel", "pistachio","mountain","radio","tumble","forgiveness","newspaper","concede","packet","lothario","tree","signing","copier"]
 #word_list = ["aardvark", "baboon", "camel"]
 #TODO-1 - Randomly choose a word from the word_list and assign it to a variable called chosen_word.
 
@@ -44,9 +44,24 @@ while continue_game == "y":
       print("No Match " + guess + " != " + x)
       y += 1
       missing += 1
+      
+        
   #for letter in chosen_word:
       #if letter == guess:
           #print("Right")
       #else:
           #print("Wrong")
-continue_game = input("Continue?")
+#continue_game = input("Continue?")
+
+string1 = "hello"
+string2 = "hella"
+
+if len(string1) != len(string2):
+    print("The strings do not have the same length.")
+else:
+    for i in range(len(string1)):
+        if string1[i] != string2[i]:
+            print("The strings do not match.")
+            break
+    else:
+        print("The strings match.")
