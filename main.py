@@ -25,6 +25,7 @@ while continue_game == "y":
   print(guess)
   word_length = len(chosen_word)
   print(word_length)
+  #break
   
   #my_string = "Hello World"
   #index_to_replace = 4 = x
@@ -40,28 +41,39 @@ while continue_game == "y":
       underscore_word = underscore_word[:y] + guess + underscore_word[y+1:]
       print(underscore_word)
       y += 1
+      string1 = underscore_word
+      string2 = chosen_word
     else:
       print("No Match " + guess + " != " + x)
       y += 1
       missing += 1
       
         
-  #for letter in chosen_word:
-      #if letter == guess:
-          #print("Right")
-      #else:
-          #print("Wrong")
-#continue_game = input("Continue?")
-
-string1 = "hello"
-string2 = "hella"
-
-if len(string1) != len(string2):
-    print("The strings do not have the same length.")
-else:
+  for letter in chosen_word:
+      if letter == guess:
+          print("Right")
+      else:
+          print("Wrong")
+  if len(string1) != len(string2):
+        print("The strings do not have the same length.")
+  else:
     for i in range(len(string1)):
-        if string1[i] != string2[i]:
-            print("The strings do not match.")
-            break
-    else:
+      if string1[i] != string2[i]:
+        print("The strings do not match.")
+        break
+      else:
         print("The strings match.")
+          #break
+continue_game = input("Continue?")
+
+
+
+#if len(string1) != len(string2):
+    #print("The strings do not have the same length.")
+#else:
+    #for i in range(len(string1)):
+        #if string1[i] != string2[i]:
+            #print("The strings do not match.")
+            #break
+    #else:
+        #print("The strings match.")
