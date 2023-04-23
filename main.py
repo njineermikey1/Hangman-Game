@@ -1,6 +1,64 @@
 #Step 1 
 
 word_list = ["aardvark", "baboon", "camel", "pistachio","mountain","radio","tumble","forgiveness","newspaper","concede","packet","lothario","tree","signing","copier"]
+#TODO task 4 - Keep Track of PLayer Progress.
+
+stages = ['''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
+''']
 #word_list = ["aardvark", "baboon", "camel"]
 #TODO-1 - Randomly choose a word from the word_list and assign it to a variable called chosen_word.
 
